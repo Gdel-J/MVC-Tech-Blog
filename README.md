@@ -67,6 +67,8 @@ https://github.com/Gdel-J/MVC-Tech-Blog.git
 link to deplyed application:
 
 
+https://mymvctechblog39.herokuapp.com/
+
 
 
 
