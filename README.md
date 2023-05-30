@@ -62,9 +62,13 @@ Clone: inside GitBash, use the command `git clone paste link here`
 
 link to application : 
 
-https://github.com/Gdel-J/
+https://github.com/Gdel-J/MVC-Tech-Blog.git
 
 link to deplyed application:
+
+
+
+
 
 
 
@@ -102,10 +106,11 @@ Also you will need to install `npm i dotenv`
 
 Create a `.env file` in the root directory of the app.
 Create three variables in the `.env file`:
-`DB_NAME`=ecommerce_db
-`DB_USER`=[your MySQL username]
-`DB_PW`=[your MySQL password]
-`DB_SESSION_SECRET`= [your secret word or sentence]
+
+-`DB_NAME`=ecommerce_db
+-`DB_USER`=[your MySQL username]
+-`DB_PW`=[your MySQL password]
+-`DB_SESSION_SECRET`= [your secret word or sentence]
 
  
 
@@ -128,14 +133,19 @@ Finally, you will want to run `node server.js` to start the app.
 
 ## Usage
 
-After the installation process
--Open the terminal  and run the command `npm start` or `node server.js`
+After the installation process:
+
+Open the terminal  and run the command `npm start` or `node server.js`
 
 In you browser you will want to run `localhost:3001/`,
 
 
 
-![Screenshot 1]
+![Screenshot 1](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/e0e95fea-fddc-4c3d-a302-62ef738b7ae6)
+![Screenshot 2](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/533d7296-7a7d-4c90-83d3-152ff3505fea)
+![Screenshot 3](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/53e7d9a2-e17b-4ba8-85b5-d7c57e542cc5)
+![Screenshot 4](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/5194c37a-314e-4ea2-8f1a-f46f0165bf81)
+
 
 
 
