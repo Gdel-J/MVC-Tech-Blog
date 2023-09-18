@@ -9,15 +9,13 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const { User, Blog, Comment } = require("./models");
-
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 const sess = {
   secret: process.env.DB_SESSION_SECRET,
   cookie: {
-    // 30 min
-    maxAge: 0.5 * 60 * 60 * 1000
+    maxAge: 0.5 * 60 * 60 * 1000 // 30 min
   },
   resave: false,
   saveUninitialized: true,
@@ -35,8 +33,15 @@ app.set('view engine', 'handlebars');
 
 app.use("/", allRoutes);
 
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something went wrong!');
+});
+
 sequelize.sync({ force: false }).then(function() {
-  app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
+  app.listen(PORT, 'localhost', function() {
+    console.log(`App listening on http://localhost:${PORT}`);
+});
+
 });
