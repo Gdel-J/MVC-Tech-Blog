@@ -5,6 +5,8 @@ const session = require("express-session");
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 require('dotenv').config();
+const apiRoutes = require("./controllers/api");
+const frontendRoutes = require("./controllers/frontendRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -32,6 +34,9 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use("/", allRoutes);
+app.use("/api", apiRoutes);
+app.use("/", frontendRoutes);
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
