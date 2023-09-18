@@ -1,19 +1,24 @@
-<section class="card text-center">
-      <div class="card-body">
-        <h3 class="card-title">Login</h3>
-        <form id="login">
-            <div class="card-text">
-            <label for="loginUsername">Username</label>
-            <input type="text" placeholder="username" id="loginUsername">
+<section class="sign-in-page">
+    <div class="form-heading">
+        <h1>Sign Up</h1>
+    </div>
+    <div class="form-section">
+        <form class="signup-form">
+            <div>
+                <label for="username-signup">Select a Username</label>
+                <input type="text" class="entry-field" id="username-signup" />
             </div>
-            <div class="card-text">
-            <label for="loginPassword">Password</label>
-            <input type="text" placeholder="password" id="loginPassword">
+            <div>
+                <label for="password-signup">Select a password</label>
+                <input type="password" class="entry-field" id="password-signup" />
             </div>
-            <button>Login!</button><br>
-            <a href="/signup">Signup instead</a>
+            <div>
+                <button type="submit" class="login-signup-btn">Sign Up!</button>
+            </div>
         </form>
     </div>
+
+    <a href="/login" class="login-link">log in instead</a>
 </section>
 
-<script src="/js/login.js"></script>
+<script src="/javascript/signup.js"></script>

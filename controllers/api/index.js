@@ -1,13 +1,11 @@
 const router = require('express').Router();
 
-// Importing the individual route files
-const blogRoutes = require('./blogRoutes');
-const commentRoutes = require('./commentRoutes');
-const userRoutes = require('./userRoutes');
+const userRoutes = require('./user-routes.js');
+const postRoutes = require('./post-routes.js');
+const commentRoutes = require('./comment-routes.js');
 
-// Using the routes
-router.use('/blogs', blogRoutes); // No /api here
-router.use('/comments', commentRoutes); // No /api here
-router.use('/users', userRoutes); // No /api here
+router.use('/users', userRoutes);
+router.use('/posts', postRoutes);
+router.use('/comments', commentRoutes)
 
 module.exports = router;

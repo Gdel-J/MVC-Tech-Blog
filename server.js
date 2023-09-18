@@ -1,53 +1,43 @@
-const express = require("express");
-const exphbs = require("express-handlebars");
-const allRoutes = require("./controllers");
-const session = require("express-session");
-const sequelize = require("./config/connection");
-const SequelizeStore = require("connect-session-sequelize")(session.Store);
-require('dotenv').config();
-const apiRoutes = require("./controllers/api");
-const frontendRoutes = require("./controllers/frontendRoutes");
+const path = require('path');
+const express = require('express');
+const routes = require('./controllers');
+const sequelize = require('./config/connection');
 const helpers = require('./utils/helpers');
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({
+    helpers
+});
+const session = require('express-session');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const sess = {
+    secret: process.env.DB_SECRET,
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+        db: sequelize,
+        checkExpirationInterval: 1000 * 60 * 10, // will check every 10 minutes
+        expiration: 1000 * 60 * 30 // will expire after 30 minutes
+    })
+};
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-const sess = {
-  secret: process.env.DB_SESSION_SECRET,
-  cookie: {
-    maxAge: 0.5 * 60 * 60 * 1000 // 30 min
-  },
-  resave: false,
-  saveUninitialized: true,
-  store: new SequelizeStore({
-    db: sequelize
-  })
-};
-app.use(session(sess));
-
-app.use(express.static('public'));
-
-const hbs = exphbs.create({});
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+app.use(session(sess));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+app.use(express.urlencoded({
+    extended: true
+}));
+app.use(routes);
 
-app.use("/api", apiRoutes);
-app.use("/", frontendRoutes);
+sequelize.sync();
 
-
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something went wrong!');
-});
-
-sequelize.sync({ force: false }).then(function() {
-  app.listen(PORT, 'localhost', function() {
-    console.log(`App listening on http://localhost:${PORT}`);
-});
-
+app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}!`);
 });
