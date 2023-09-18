@@ -16,14 +16,17 @@ Moreover, this application is MVC structured and  uses o multiple packages such 
 
 
  
-  1. [Installation](#installation)
-  2. [Usage](#usage)
-  3. [License](#license)
-  4. [Contributing](#contributing)
-  5. [Tests](#tests)
-  6. [Questions](#questions)
-  7. [Features](#features)
-  8. [Credits](#credits)
+- [MVC-Tech-Blog](#mvc-tech-blog)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [How to Contribute](#how-to-contribute)
+  - [Tests](#tests)
+  - [Questions](#questions)
+  - [Features](#features)
+  - [Credits](#credits)
 
 ## Installation
 
@@ -129,7 +132,7 @@ then
 `SOURCE db/schema.sql` to create the database and initialize the database.
 
 
-TIPS: Open a second time, the repository in the integrated terminal and run : ``node seeds/index.js` to seed the databse.(you don't have to close the frist one in the case you want to interact with mysql, otherwise you can close mysql and then run  the two node actions)
+TIPS: Open a second time, the repository in the integrated terminal and run : `node seeds/index.js` to seed the databse.(you don't have to close the frist one in the case you want to interact with mysql, otherwise you can close mysql and then run  the two node actions)
 
 
 
