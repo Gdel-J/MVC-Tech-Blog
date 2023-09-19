@@ -79,12 +79,6 @@ https://mymvctechblog777-91a7da73e3ed.herokuapp.com/
 
 
 
-
-
-
-
-
-
                                                  Third: 
 
 If you don't have the dependencies :
@@ -150,10 +144,13 @@ In you browser you will want to run `localhost:3001/`,
 
 
 
-![Screenshot 1](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/e0e95fea-fddc-4c3d-a302-62ef738b7ae6)
-![Screenshot 2](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/533d7296-7a7d-4c90-83d3-152ff3505fea)
-![Screenshot 3](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/53e7d9a2-e17b-4ba8-85b5-d7c57e542cc5)
-![Screenshot 4](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/5194c37a-314e-4ea2-8f1a-f46f0165bf81)
+![Screenshot 1](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/4b9b6af2-9f66-4207-8d19-80042c525224)
+![Screenshot 2](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/e35b56d7-3df1-463f-b98e-abec57ffc2a2)
+![Screenshot 3](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/eb93aafe-18c2-4056-9a8c-800c65dbd6e8)
+![Screenshot 4](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/cfced1ef-e53a-4b25-a3fb-1fd940715f3f)
+![Screenshot 5](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/1c06e189-3842-4d30-9e84-4ecdf5171515)
+![Screenshot 6](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/58be391f-a7f0-4df0-b516-2e194caa90a9)
+![Screenshot 7](https://github.com/Gdel-J/MVC-Tech-Blog/assets/120201085/2d9f2450-bd1b-4b9a-a453-b7ae4714ac34)
 
 
 
