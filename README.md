@@ -72,7 +72,7 @@ https://github.com/Gdel-J/MVC-Tech-Blog.git
 link to deplyed application:
 
 
-https://mymvctechblog39.herokuapp.com/
+https://mymvctechblog777-91a7da73e3ed.herokuapp.com/
 
 
 
@@ -173,7 +173,7 @@ N/A
 
 ## Questions
 
-If you have any questions about this repository, you might want to open an issue or contact me  at (email:`jesdelevecchio@gmail.com`)
+If you have any questions about this repository, you might want to open an issue or contact me  at (email:`jessygdelevecchio@gmail.com`)
 Also you can find more of my work at (`https://www.github.com/Gdel-J`).
 
 ## Features
