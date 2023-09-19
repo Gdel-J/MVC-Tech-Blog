@@ -1,0 +1,22 @@
+[
+  {
+    "title": "The Milky Way",
+    "content": "The Milky Way is a disk that measures about 120,000 light years across, with a central bulge that has a diameter of about 12,000 light years.  ",
+    "user_id": 1
+  },
+  {
+    "title": "There is a black hole at the center",
+    "content": "Like most larger galaxies, the Milky Way has a supermassive black hole at its center called Sagittarius A*.  ",
+    "user_id": 1
+  },
+  {
+    "title": "HasMany: It has over 200 billion stars ",
+    "content": "The Milky Way is only a medium sized galaxy with an estimated 200 billion stars. The largest galaxy we know of is called IC 1101 and has over 100 trillion stars.",
+    "user_id": 2
+  },
+  {
+    "title": "BelongsTo:It's part of the Virgo Supercluster",
+    "content": "It is a group of galaxies within 150 million light years.The Virgo Supercluster contains at least 100 galaxy groups and clusters, and is about 110 million light-years in diameter. ",
+    "user_id": 3
+  }
+]
